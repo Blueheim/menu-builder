@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+body {
+  font-size: 1.6rem;
 }
 
 .App-logo {
@@ -7,15 +7,28 @@
   height: 40vmin;
 }
 
+.App-toolbar {
+  height: calc(100vh - (8rem + 4rem));
+  width: 40vw;
+  overflow: scroll;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  height: 8rem;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; */
+}
+
+.App-main {
+  height: calc(100vh - (8rem + 4rem));
+}
+
+.App-footer {
+  height: 4rem;
 }
 
 .App-link {

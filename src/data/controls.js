@@ -1,0 +1,397 @@
+import basePainBlanc from '../assets/base-pain-blanc.svg';
+import painBlanc from '../assets/pain-blanc.svg';
+import painBlancCourge from '../assets/pain-blanc-courge.svg';
+import painBlancSesame from '../assets/pain-blanc-sesame.svg';
+import painBlancPavot from '../assets/pain-blanc-pavot.svg';
+
+import basePainComplet from '../assets/base-pain-complet.svg';
+import painComplet from '../assets/pain-complet.svg';
+import painCompletCourge from '../assets/pain-complet-courge.svg';
+import painCompletSesame from '../assets/pain-complet-sesame.svg';
+import painCompletPavot from '../assets/pain-complet-pavot.svg';
+
+import basePainCharbon from '../assets/base-pain-charbon.svg';
+import painCharbon from '../assets/pain-charbon.svg';
+import painCharbonCourge from '../assets/pain-charbon-courge.svg';
+import painCharbonSesame from '../assets/pain-charbon-sesame.svg';
+import painCharbonPavot from '../assets/pain-charbon-pavot.svg';
+
+import barbecue from '../assets/barbecue.svg';
+import ketchup from '../assets/ketchup.svg';
+import moutarde from '../assets/moutarde.svg';
+
+import steakSaignant from '../assets/steak-saignant.svg';
+import steakBienCuit from '../assets/steak-bien-cuit.svg';
+import steakAPoint from '../assets/steak-a-point.svg';
+import bacon from '../assets/bacon.svg';
+
+import salade from '../assets/salade.svg';
+import oignon from '../assets/oignon.svg';
+import cornichon from '../assets/cornichon.svg';
+import tomate from '../assets/tomate.svg';
+
+import emmental from '../assets/emmental.svg';
+import cheddar from '../assets/cheddar.svg';
+
+import water from '../assets/eau.svg';
+import beer from '../assets/biere.svg';
+import soda from '../assets/soda.svg';
+
+import frites from '../assets/frite.svg';
+import oignonFrie from '../assets/oignon-frie.svg';
+
+const controls = {
+  coupling: {
+    drink: {
+      type: 'choice',
+      values: [
+        {
+          id: 'a1_v1',
+          name: 'drink',
+          label: 'Aucune',
+          value: '1',
+          image: null,
+          alt: 'Aucune',
+          price: 0,
+          calorie: 0,
+        },
+        {
+          id: 'a1_v2',
+          name: 'drink',
+          label: 'Eau',
+          value: '2',
+          class: 'water',
+          image: water,
+          alt: 'Eau minérale',
+          price: 1.2,
+          calorie: 0,
+        },
+        {
+          id: 'a1_v3',
+          name: 'drink',
+          label: 'Soda',
+          value: '3',
+          class: 'soda',
+          image: soda,
+          alt: 'Soda',
+          price: 2.4,
+          calorie: 140,
+        },
+        {
+          id: 'a1_v4',
+          name: 'drink',
+          label: 'Bière',
+          value: '4',
+          class: 'beer',
+          image: beer,
+          alt: 'Bière',
+          price: 3.3,
+          calorie: 150,
+        },
+      ],
+    },
+    fries: {
+      type: 'choice',
+      values: [
+        {
+          id: 'a2_v1',
+          name: 'fries',
+          label: 'Aucunes',
+          value: '1',
+          image: null,
+          alt: 'Aucunes',
+          price: 0,
+          calorie: 0,
+        },
+        {
+          id: 'a2_v2',
+          name: 'fries',
+          label: 'Frites',
+          value: '2',
+          class: 'french-fries',
+          image: frites,
+          alt: 'Frites',
+          price: 2,
+          calorie: 320,
+        },
+        {
+          id: 'a2_v3',
+          name: 'fries',
+          label: "Rondelles d'oignon",
+          value: '3',
+          class: 'onion-rings',
+          image: oignonFrie,
+          alt: "Rondelles d'oignon",
+          price: 2.2,
+          calorie: 250,
+        },
+      ],
+    },
+  },
+  burger: {
+    bread: {
+      type: 'choice',
+      values: [
+        {
+          id: 'c1_v1',
+          name: 'bread',
+          label: 'Blanc',
+          value: '1',
+          class: 'base-bread',
+          image: basePainBlanc,
+          alt: 'Base pain blanc',
+          imageTop1: painBlanc,
+          altTop1: 'Pain blanc',
+          imageTop2: painBlancSesame,
+          altTop2: 'Pain blanc sésame',
+          imageTop3: painBlancPavot,
+          altTop3: 'Pain blanc pavot',
+          imageTop4: painBlancCourge,
+          altTop4: 'Pain blanc courge',
+          price: 0.5,
+          calorie: 250,
+        },
+        {
+          id: 'c1_v2',
+          name: 'bread',
+          label: 'Complet',
+          value: '2',
+          class: 'base-bread',
+          image: basePainComplet,
+          alt: 'Base pain complet',
+          imageTop1: painComplet,
+          altTop1: 'Pain complet',
+          imageTop2: painCompletSesame,
+          altTop2: 'Pain complet sésame',
+          imageTop3: painCompletPavot,
+          altTop3: 'Pain complet pavot',
+          imageTop4: painCompletCourge,
+          altTop4: 'Pain complet courge',
+          price: 0.8,
+          calorie: 280,
+        },
+        {
+          id: 'c1_v3',
+          name: 'bread',
+          label: 'Charbon végétal',
+          value: '3',
+          class: 'base-bread',
+          image: basePainCharbon,
+          alt: 'Base pain charbon végétal',
+          imageTop1: painCharbon,
+          altTop1: 'Pain charbon végétal',
+          imageTop2: painCharbonSesame,
+          altTop2: 'Pain charbon sésame',
+          imageTop3: painCharbonPavot,
+          altTop3: 'Pain charbon pavot',
+          imageTop4: painCharbonCourge,
+          altTop4: 'Pain charbon courge',
+          price: 1,
+          calorie: 180,
+        },
+      ],
+    },
+    topping: {
+      type: 'choice',
+      values: [
+        {
+          id: 'c1_v11',
+          name: 'topping',
+          label: 'Aucun',
+          value: '1',
+          price: 0,
+          calorie: 0,
+        },
+        {
+          id: 'c1_v21',
+          name: 'topping',
+          label: 'Sésame',
+          value: '2',
+          price: 0.15,
+          calorie: 50,
+        },
+        {
+          id: 'c1_v31',
+          name: 'topping',
+          label: 'Pavot',
+          value: '3',
+          price: 0.25,
+          calorie: 30,
+        },
+        {
+          id: 'c1_v41',
+          name: 'topping',
+          label: 'Courge',
+          value: '4',
+          price: 0.4,
+          calorie: 70,
+        },
+      ],
+    },
+    sauce: {
+      type: 'selection',
+      values: [
+        {
+          id: 'c2_v1',
+          name: 'sauce1',
+          label: 'Ketchup',
+          value: '1',
+          class: 'ketchup',
+          image: ketchup,
+          alt: 'Sauce ketchup',
+          price: 0.2,
+          calorie: 100,
+        },
+        {
+          id: 'c2_v2',
+          name: 'sauce2',
+          label: 'Barbecue',
+          value: '2',
+          class: 'barbecue',
+          image: barbecue,
+          alt: 'Sauce barbecue',
+          price: 0.2,
+          calorie: 160,
+        },
+        {
+          id: 'c3_v3',
+          name: 'sauce3',
+          label: 'Moutarde',
+          value: '3',
+          class: 'mustard',
+          image: moutarde,
+          alt: 'Sauce moutarde',
+          price: 0.2,
+          calorie: 230,
+        },
+      ],
+    },
+    meat: {
+      type: 'choice',
+      values: [
+        {
+          id: 'c4_v1',
+          name: 'meat',
+          label: 'Saignante',
+          value: '1',
+          class: 'steak',
+          image: steakSaignant,
+          alt: 'Steack saignant',
+          price: 3.5,
+          calorie: 250,
+        },
+        {
+          id: 'c4_v2',
+          name: 'meat',
+          label: 'A point',
+          value: '2',
+          class: 'steak',
+          image: steakAPoint,
+          alt: 'Steack à point',
+          price: 3.5,
+          calorie: 250,
+        },
+        {
+          id: 'c4_v3',
+          name: 'meat',
+          label: 'Bien cuite',
+          value: '3',
+          class: 'steak',
+          image: steakBienCuit,
+          alt: 'Steack bien cuit',
+          price: 3.5,
+          calorie: 250,
+        },
+        {
+          id: 'c4_v4',
+          name: 'meat',
+          label: 'Bacon',
+          value: '4',
+          class: 'bacon',
+          image: bacon,
+          alt: 'Bacon',
+          price: 1.6,
+          calorie: 420,
+        },
+      ],
+    },
+    cheese: {
+      type: 'choice',
+      values: [
+        {
+          id: 'c5_v1',
+          name: 'cheese',
+          label: 'Emmental',
+          value: '1',
+          class: 'cheese',
+          image: emmental,
+          alt: 'Emmental',
+          price: 0.15,
+          calorie: 180,
+        },
+        {
+          id: 'c5_v2',
+          name: 'cheese',
+          label: 'Cheddar',
+          value: '2',
+          class: 'cheese',
+          image: cheddar,
+          alt: 'Cheddar',
+          price: 0.15,
+          calorie: 200,
+        },
+      ],
+    },
+    vegetable: {
+      type: 'choice',
+      values: [
+        {
+          id: 'c6_v1',
+          name: 'salad',
+          label: 'Salade',
+          value: '1',
+          class: 'salad',
+          image: salade,
+          alt: 'Salade',
+          price: 0.2,
+          calorie: 70,
+        },
+        {
+          id: 'c6_v2',
+          name: 'tomato',
+          label: 'Tomate',
+          value: '2',
+          class: 'tomato',
+          image: tomate,
+          alt: 'Tomate',
+          price: 0.3,
+          calorie: 20,
+        },
+        {
+          id: 'c6_v3',
+          name: 'onion',
+          label: 'Oignon',
+          value: '3',
+          class: 'onion',
+          image: oignon,
+          alt: 'Oignon',
+          price: 0.15,
+          calorie: 30,
+        },
+        {
+          id: 'c6_v4',
+          name: 'pickle',
+          label: 'Cornichon',
+          value: '4',
+          class: 'pickle',
+          image: cornichon,
+          alt: 'Cornichon',
+          price: 0.3,
+          calorie: 50,
+        },
+      ],
+    },
+  },
+};
+
+export default controls;

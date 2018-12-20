@@ -1,0 +1,97 @@
+.svg-box {
+  display: inline-block;
+  position: relative;
+  height: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.plate image {
+  width: 90%;
+}
+
+.drink image {
+  height: 370px;
+}
+
+.fries image {
+  height: 240px;
+}
+
+.image-container {
+  height: 100%;
+}
+
+.svg image {
+  display: block;
+}
+
+.drink {
+}
+
+.base-bread {
+}
+
+.base-bread + .top-bread {
+}
+
+.ketchup {
+}
+
+.steak {
+}
+
+.bacon {
+}
+
+.bacon + .ketchup {
+}
+
+.steak + .ketchup {
+}
+
+.svg-barbecue {
+  width: 52vmin;
+}
+
+.svg-moutarde {
+  width: 52vmin;
+}
+
+.svg-salade {
+  width: 54vmin;
+}
+
+.svg-oignon {
+  width: 53vmin;
+}
+
+.svg-cornichon {
+  width: 53vmin;
+}
+
+.svg-tomate {
+  width: 54vmin;
+}
+
+.svg-bacon {
+  width: 55vmin;
+}
+
+.svg-cheese {
+  width: 55vmin;
+  bottom: 4rem;
+}
+
+.svg-top {
+  bottom: 9rem;
+}
