@@ -1,5 +1,5 @@
 import React from 'react';
-import { Control, Input, Radio, Switch } from 'nostromo-react';
+import { Control, Checkbox, Radio, Switch } from 'nostromo-react';
 
 const MenuConfigControl = props => {
   let control = null;
@@ -41,10 +41,9 @@ const MenuConfigControl = props => {
         <>
           {props.control.values.map(value => {
             return (
-              <Input
+              <Checkbox
                 key={value.id}
                 attributes={{
-                  type: 'checkbox',
                   id: props.id + value.id,
                   name: value.name + props.id,
                   value: value.value,
@@ -52,7 +51,7 @@ const MenuConfigControl = props => {
                 eventHandlers={{ onChange: props.changeHandler }}
               >
                 {value.label}
-              </Input>
+              </Checkbox>
             );
           })}
         </>

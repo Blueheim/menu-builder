@@ -107,7 +107,7 @@ const MenuConfig = props => {
               <Button
                 eventHandlers={{ onClick: event => props.removeIngredientHandler(ingredient.id, ingredient.order) }}
               >
-                <svg className={classNames({ [classes['Icon']]: true, icon: true })}>
+                <svg className={classNames({ [classes['Icon']]: true, icon: true, 'm-invalid': true })}>
                   <use xlinkHref={`${icons}#icon-circle-with-minus`} />
                 </svg>
               </Button>

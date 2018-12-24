@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "classnames": "^2.2.6",
-    "nostromo-react": "^0.1.17",
-    "react": "^16.6.3",
+    "nostromo-react": "^0.1.22",
+    "react": "^16.7.0",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
