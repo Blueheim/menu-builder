@@ -10,7 +10,7 @@ const MenuConfig = props => {
   return (
     <div className={classNames({ [classes['Config']]: true })}>
       <div className={classes['CouplingConfig']}>
-        <p>Choix des accompagnements</p>
+        <p>Couplings</p>
         {props.couplingConfig.map(coupling => (
           <div
             className={classNames({
@@ -26,7 +26,7 @@ const MenuConfig = props => {
                 <svg className={classNames({ [classes['Icon']]: true, icon: true, 'm-margin-ty--right': true })}>
                   <use xlinkHref={`${icons}#icon-drink`} />
                 </svg>
-                <span className={classes.CouplingType}>Boisson</span>
+                <span className={classes.CouplingType}>Drink</span>
               </>
             )}
 
@@ -35,7 +35,7 @@ const MenuConfig = props => {
                 <svg className={classNames({ [classes['Icon']]: true, icon: true, 'm-margin-ty--right': true })}>
                   <use xlinkHref={`${icons}#icon-air`} />
                 </svg>
-                <span className={classes.CouplingType}>Fritures</span>
+                <span className={classes.CouplingType}>Fries</span>
               </>
             )}
             <MenuConfigControl
@@ -48,7 +48,7 @@ const MenuConfig = props => {
         ))}
       </div>
       <div className={classes['BurgerConfig']}>
-        <p>Configuratin du burger</p>
+        <p>Burger settings</p>
 
         {props.burgerConfig.map(ingredient => (
           <div
@@ -70,10 +70,10 @@ const MenuConfig = props => {
               {ingredient.order}
             </div>
             {ingredient.type === 'bread' && (
-              <span className={classNames({ [classes['IngredientType']]: true })}>Choix du pain:</span>
+              <span className={classNames({ [classes['IngredientType']]: true })}>Bread:</span>
             )}
             {ingredient.type === 'topping' && (
-              <span className={classNames({ [classes['IngredientType']]: true })}>Garniture du pain:</span>
+              <span className={classNames({ [classes['IngredientType']]: true })}>Topping:</span>
             )}
 
             {ingredient.type !== 'bread' && ingredient.type !== 'topping' && (
@@ -86,15 +86,15 @@ const MenuConfig = props => {
                 }}
               >
                 <option value="bread" disabled={ingredient.id !== 1 && ingredient.id !== 2}>
-                  Pain
+                  Bread
                 </option>
                 <option value="topping" disabled={ingredient.id !== 1 && ingredient.id !== 2}>
                   Topping
                 </option>
                 <option value="sauce">Sauce</option>
-                <option value="meat">Viande</option>
-                <option value="cheese">Fromage</option>
-                <option value="vegetable">Crudité</option>
+                <option value="meat">Meat</option>
+                <option value="cheese">Cheese</option>
+                <option value="vegetable">Vegetables</option>
               </Select>
             )}
             <MenuConfigControl

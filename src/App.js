@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MenuBuilderView from './views/MenuBuilder/MenuBuilderView';
-import logo from './logo.svg';
+import logo from './assets/burger.png';
 
 import {
   AppLayout,
@@ -25,12 +25,13 @@ class App extends Component {
       <AppLayout full config="9">
         <HeaderLayout primary className="App-header">
           <Nav>
-            <NavLogo title="Nostromo">
+            <NavLogo title="Menu maker">
               <Image className="logo" src={logo} alt="logo" />
+              My menu maker
             </NavLogo>
             <NavActions>
               <NavAction>
-                <NavLink href="/">Nouveau</NavLink>
+                <NavLink href="/">New menu</NavLink>
               </NavAction>
             </NavActions>
           </Nav>
@@ -43,7 +44,7 @@ class App extends Component {
           </Switch>
         </BrowserRouter>
         <FooterLayout tertiary className="App-footer">
-          Footer
+          DEROEUX Xavier - &#9400; { new Date(Date.now()).getFullYear() }
         </FooterLayout>
       </AppLayout>
     );

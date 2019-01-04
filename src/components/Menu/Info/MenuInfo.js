@@ -13,7 +13,7 @@ const MenuInfo = props => {
       })}
     >
       <span className="m-size-xs">Calories: {props.calorie}</span>
-      <span className="m-size-xs">Montant: {props.price.toFixed(2)} €</span>
+      <span className="m-size-xs">Total due: {props.price.toFixed(2)} €</span>
     </div>
   );
 };

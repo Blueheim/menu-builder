@@ -172,7 +172,7 @@ class BurgerBuilderContainer extends Component {
     return (
       <>
         <BarLayout className="App-toolbar m-grey-3 m-padding-ty">
-          <h1 className="m-size-md u-tc">Configuration de votre menu</h1>
+          <h1 className="m-size-md u-tc">Build your own !</h1>
           <MenuInfos price={this.state.totalPrice} calorie={this.state.totalCalorie} />
           <MenuConfig
             couplingConfig={this.state.menuConfig.coupling}
