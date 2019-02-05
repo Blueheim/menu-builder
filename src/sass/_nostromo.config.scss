@@ -37,5 +37,3 @@ $myFonts: (
 
 $colors: map-merge($colors, $myColors);
 $fonts: map-merge($fonts, $myFonts);
-
-@import 'node_modules/nostromo-css/default';

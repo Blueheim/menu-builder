@@ -93,7 +93,11 @@ export default function positionImage(image, totalOffset, node, lastNode = null)
             if (lastType === 'vegetable' && (lastValue === '2' || lastValue === '3' || lastValue === '4')) {
               node.setAttribute('y', yLast + 10);
             } else {
-              node.setAttribute('y', yLast - 8);
+              if (lastType === 'meat' && lastValue === '4') {
+                node.setAttribute('y', yLast + heightLast / 3);
+              } else {
+                node.setAttribute('y', yLast - 8);
+              }
             }
           }
 

@@ -128,7 +128,7 @@ const MenuConfig = props => {
         <svg className={classNames({ [classes['Icon']]: true, icon: true })}>
           <use xlinkHref={`${icons}#icon-circle-with-plus`} />
         </svg>
-        <span className="btn__text">Ajouter un ingrédient</span>
+        <span className="btn__text">Add ingredient</span>
       </Button>
     </div>
   );

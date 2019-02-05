@@ -7,14 +7,19 @@ body {
   height: 40vmin;
 }
 
+.logo {
+  margin-right: 1rem;
+}
+
 .App-toolbar {
   height: calc(100vh - (8rem + 4rem));
-  width: 40vw;
-  overflow: scroll;
+  width: 45vw;
+  overflow: auto;
 }
 
 .App-header {
   height: 8rem;
+  padding-left: 1rem;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +34,9 @@ body {
 
 .App-footer {
   height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-link {

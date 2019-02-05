@@ -14,8 +14,8 @@ import {
   Image,
   FooterLayout,
 } from 'nostromo-react';
-// import nostromo overrides
-import './sass/nostromo.config.scss';
+
+import './sass/main.scss';
 
 import './App.css';
 
@@ -38,13 +38,11 @@ class App extends Component {
         </HeaderLayout>
         <BrowserRouter>
           <Switch>
-            {/* <Route path="/checkout" component={Checkout} />
-            <Route path="/orders" component={Orders} /> */}
             <Route path="/" exact component={MenuBuilderView} />
           </Switch>
         </BrowserRouter>
         <FooterLayout tertiary className="App-footer">
-          DEROEUX Xavier - &#9400; { new Date(Date.now()).getFullYear() }
+          DEROEUX Xavier - &#9400; {new Date(Date.now()).getFullYear()}
         </FooterLayout>
       </AppLayout>
     );
